@@ -50,7 +50,7 @@ export const Card = ({ title, description, icons }) => {
 			<p className="text-dark">{description}</p>
 			<div className="text-end">
 				{icons && icons.map((value, index) => (
-					<Link key={index} href={value.link}>
+					<Link key={index} href={value.link} legacyBehavior>
 						<a target="_blank" rel="noreferrer">
 							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="2x" />
 						</a>

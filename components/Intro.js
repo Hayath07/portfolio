@@ -15,11 +15,11 @@ export const Intro = ({ title, description, image, buttons }) => {
 						<div className="text-center">
 							{buttons.map((value, index) => (
 								(value.isPrimary) ?
-									<Link key={index} href={value.link}>
+									<Link key={index} href={value.link} legacyBehavior>
 										<a className="btn btn-primary my-1 mx-3">{value.title}</a>
 									</Link>
 									:
-									<Link key={index} href={value.link}>
+									<Link key={index} href={value.link} legacyBehavior>
 										<a target="_blank" rel="noreferrer" className="btn btn-outline-primary my-1 mx-3">{value.title}</a>
 									</Link>
 							))}
@@ -29,7 +29,7 @@ export const Intro = ({ title, description, image, buttons }) => {
 						<img
 							className="img-fluid my-3 card-image" width="250"
 							height="250" src={image}
-							alt="profile of hashirshoaeb"
+							alt="profile of hayathmohammad"
 						/>
 					</div>
 				</div>

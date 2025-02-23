@@ -11,13 +11,13 @@ export const Contact = ({ title, description, buttons }) => {
 					<div className="">
 						{buttons.map((value, index) => (
 							(value.isPrimary) ?
-								<Link key={index} href={value.link}>
+								<Link key={index} href={value.link} legacyBehavior>
 									<a className="btn btn-primary my-1 mx-3">
 										{value.title}
 									</a>
 								</Link>
 								:
-								<Link key={index} href={value.link}>
+								<Link key={index} href={value.link} legacyBehavior>
 									<a className="btn btn-outline-primary my-1 mx-3">
 										{value.title}
 									</a>
@@ -34,12 +34,12 @@ export const Footer = () => {
 	return (
 		<footer className="bg-secondary text-center py-2 px-5">
 			<div className="container text-muted">
-				<small>&copy; 2021 {" "}
-					<Link href="https://github.com/hashirshoaeb">
-						<a>hashirshoaeb</a>
+				<small>&copy; 2025 {" "}
+					<Link href="https://github.com/Hayath07" legacyBehavior>
+						<a>hayathmohammad</a>
 					</Link>
 					. Open sourced with love under {" "}
-					<Link href="https://github.com/hashirshoaeb/portfolio/blob/main/LICENSE">
+					<Link href="https://github.com/Hayath07/portfolio/blob/main/LICENSE" legacyBehavior>
 						<a>MIT</a>
 					</Link>
 					{" "} License

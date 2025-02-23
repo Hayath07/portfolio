@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import getConfig from 'next/config'
+import getConfig from 'next/config';
 import Link from 'next/link';
 import { Footer } from '../components/Footer';
 import { links, SEO, } from '../config/config';
@@ -13,7 +13,7 @@ export default function Home() {
       <Header seo={SEO} />
       <div className="d-flex flex-column justify-content-between bg-secondary min-vh-100">
         <div className="py-5 px-5 container text-center">
-          <img className="img-fluid my-3 card-image" width="150" height="150" src={links.image} alt="profile of hashirshoaeb" />
+          <img className="img-fluid my-3 card-image" width="150" height="150" src={links.image} alt="profile of hayathmohammad" />
           <h3 className="mt-3">{links.title}</h3>
           <p>{links.description}</p>
           {links.cards.map((value, index) => (
@@ -31,7 +31,7 @@ function Button({ title, link }) {
   return (
     <div className="row justify-content-center">
       <div className="card card-work mx-sm-4 my-2" style={{ width: "20rem" }}>
-        <Link href={link}>
+        <Link href={link} legacyBehavior>
           <a target="_blank" rel="noreferrer">
             <h4 className="text-primary py-3 px-3">{title}</h4>
           </a>

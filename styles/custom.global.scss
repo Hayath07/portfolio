@@ -118,6 +118,8 @@ html {
 
 body {
   margin: 0;
+  padding-top: 60px;
+  // Adjust based on navbar height
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

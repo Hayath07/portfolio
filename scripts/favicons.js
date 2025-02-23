@@ -1,4 +1,4 @@
-const favicons = require("favicons")
+const { favicons } = require("favicons")
 const fs = require('fs')
 
 const source = "config/profile.png" // Source image(s). `string`, `buffer` or array of `string`
